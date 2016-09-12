@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ee684b</color>
+    <color name="colorPrimaryDark">#c85b44</color>
+    <color name="colorPrimaryDarker">#a64c39</color>
+    <color name="colorAccent">#399cc6</color>
+    <color name="dark_layout">#424242</color>
+
+    <color name="black">#000000</color>
+    <color name="jet">#222222</color>
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+    <color name="unselected">#f7b4a4</color>
+    <color name="ijo">#9ccc66</color>
+    <color name="orange">#fc7244</color>
+    <color name="dark_design">#343434</color>
+    <color name="eee">#eeeeee</color>
+    <color name="required">#f64136</color>
+    <color name="ungubukanungu">#3763ce</color>
+
+    <color name="colorPressed">#c84c4e</color>
+    <color name="black_semi_transparent">#B2000000</color>
+    <color name="background">#e5e5e5</color>
+    <color name="half_black">#af4547</color>
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="pink">#e91e63</color>
+    <color name="pink_pressed">#ec407a</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+</resources>

@@ -1,0 +1,421 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.login.RegisterActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_layout_create_account_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/prologue_editprofile"
+                android:textColor="@color/black"
+                android:paddingTop="20dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="12sp"
+                android:lineSpacingExtra="5dp"
+                android:background="@color/eee"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="*required"
+                android:textColor="@color/required"
+                android:paddingTop="5dp"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="12sp"
+                android:lineSpacingExtra="5dp"
+                android:background="@color/eee"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="3dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CV"
+                android:textSize="16dp"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black"/>
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="*"-->
+                <!--android:textSize="16dp"-->
+                <!--android:layout_gravity="start"-->
+                <!--android:paddingTop="9dp"-->
+                <!--android:paddingLeft="3dp"-->
+                <!--android:paddingRight="16dp"-->
+                <!--android:textColor="@color/required"/>-->
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/upload_cv_benar"
+            android:textColor="@color/dark_design"
+            android:paddingTop="9dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="13sp"
+            android:lineSpacingExtra="5dp" />
+
+        <Button
+            android:id="@+id/btnCv"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:text="SELECT FILE"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:textColor="@color/black" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Detail Kontak"
+                android:textSize="16dp"
+                android:paddingTop="6dp"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="16dp"
+                android:layout_gravity="start"
+                android:paddingTop="0dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/required"/>
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nama_lengkapveri"
+            android:textColor="@color/dark_design"
+            android:paddingTop="9dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:textSize="13sp"
+            android:lineSpacingExtra="5dp" />
+
+
+        <LinearLayout
+            android:layout_width="0px"
+            android:layout_height="0px"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            />
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+            android:layout_marginTop="16dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/edit_text_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_enter_username"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/dark_design"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="DATA PRIBADI"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingBottom="12dp"
+            android:textColor="@color/ungubukanungu"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_dob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/edit_text_dob"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_enter_dob"
+                android:onClick="setDOB"
+                android:textColor="@color/dark_design"
+                android:inputType="text"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_text_province"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_enter_province"
+                android:textColor="@color/dark_design"
+                android:inputType="textAutoComplete"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_text_city"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_design"
+                android:hint="@string/hint_enter_city"
+                android:inputType="textAutoComplete"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DATA PENDIDIKAN"
+                android:textSize="14dp"
+                android:paddingBottom="12dp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:textColor="@color/ungubukanungu"/>
+
+
+        </LinearLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_institut"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+            android:layout_marginTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_text_institut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/dark_design"
+                android:hint="@string/hint_enter_institut"
+                android:inputType="textAutoComplete"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_fakultas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_text_fakultas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_enter_faculty"
+                android:textColor="@color/dark_design"
+                android:inputType="textAutoComplete"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_jurusan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <AutoCompleteTextView
+                android:id="@+id/edit_text_jurusan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_enter_department"
+                android:textColor="@color/dark_design"
+                android:inputType="textAutoComplete"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_semester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/edit_text_semester"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_enter_semester"
+                android:textColor="@color/dark_design"
+                android:inputType="number"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_ipk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/lists_title_bottom_margin"
+            android:paddingBottom="10dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="@dimen/activity_horizontal_margin">
+
+            <EditText
+                android:id="@+id/edit_text_ipk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_enter_ipk"
+                android:textColor="@color/dark_design"
+                android:inputType="numberDecimal"
+                android:textSize="14sp" />
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Persetujuan"
+                android:textSize="16dp"
+                android:paddingTop="3dp"
+                android:paddingLeft="16dp"
+                android:textColor="@color/black"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="*"
+                android:textSize="16dp"
+                android:layout_gravity="start"
+                android:paddingTop="0dp"
+                android:paddingLeft="3dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/required"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tanpa_manipulasi"
+            android:textColor="@color/dark_design"
+            android:paddingTop="9dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"
+            android:textSize="13sp"
+            android:lineSpacingExtra="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Setuju"
+                android:textSize="13sp"
+                android:paddingLeft="12dp"
+                android:theme="@style/AppThemeCheck"
+                 />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_create_account_final"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_field_height"
+            android:background="@color/eee"
+            android:onClick="onSavePressed"
+            android:text="@string/title_activity_edit_profile"
+            android:textColor="@color/dark_design"
+            android:textSize="@dimen/login_buttons_text_size" />
+
+    </LinearLayout>
+</ScrollView>

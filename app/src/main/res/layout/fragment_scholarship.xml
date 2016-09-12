@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cat_instate"
+                style="@style/Button.login"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:layout_width="100dp"
+                android:layout_height="38dp"
+                android:background="@drawable/shape4"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:text="Dalam Negeri" />
+
+            <Button
+                android:id="@+id/cat_overseas"
+                style="@style/Button.login"
+                android:layout_width="100dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="4dp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@color/iron"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_height="38dp"
+                android:text="Luar Negeri" />
+
+
+        </LinearLayout>
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/card_view_recommended"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_view_active_lists"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:isScrollContainer="false"
+                android:nestedScrollingEnabled="false"
+                android:scrollbars="none"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+        </android.support.design.widget.CoordinatorLayout>
+        <ProgressBar
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>
