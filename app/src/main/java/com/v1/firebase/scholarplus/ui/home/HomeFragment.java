@@ -27,7 +27,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.v1.firebase.scholarplus.R;
-import com.v1.firebase.scholarplus.helper.DownLoadImageTask;
 import com.v1.firebase.scholarplus.model.News;
 import com.v1.firebase.scholarplus.model.Scholarship;
 import com.v1.firebase.scholarplus.model.User;
@@ -191,7 +190,13 @@ public class HomeFragment extends Fragment {
                 mProgressBar.setVisibility(ProgressBar.INVISIBLE);
                 viewHolder.createdByUser.setText(news.getSource());
                 if (news.getPhotopath() != null)
-                    new DownLoadImageTask(viewHolder.photoBy).execute(news.getPhotopath());
+//                    new DownLoadImageTask(viewHolder.photoBy).execute(news.getPhotopath());
+                    Picasso.with(getActivity().getApplicationContext())
+                            .load(news.getPhotopath())
+//                                            .resize(50, 50)
+//                                            .centerCrop()
+                            .into(viewHolder.photoBy);
+
                 String s = Html.fromHtml(news.getNama()).toString();
                 final String nama = s;
 

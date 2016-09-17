@@ -2,6 +2,7 @@ package com.v1.firebase.scholarplus.ui;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
@@ -48,9 +49,10 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.squareup.picasso.Picasso;
 import com.v1.firebase.scholarplus.R;
-import com.v1.firebase.scholarplus.helper.DownLoadImageTask;
 import com.v1.firebase.scholarplus.model.User;
+import com.v1.firebase.scholarplus.service.NotificationListener;
 import com.v1.firebase.scholarplus.ui.home.HomeFragment;
 import com.v1.firebase.scholarplus.ui.login.EditProfileActivity;
 import com.v1.firebase.scholarplus.ui.login.profiledetail.AddPdportfolioActivity;
@@ -100,6 +102,15 @@ public class MainActivity extends BaseActivity
             super.onBackPressed();
         }
     }
+    private boolean isMyServiceRunning(Class<?> serviceClass) {
+        ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
+        for (ActivityManager.RunningServiceInfo service : manager.getRunningServices(Integer.MAX_VALUE)) {
+            if (serviceClass.getName().equals(service.service.getClassName())) {
+                return true;
+            }
+        }
+        return false;
+    }
     private void initializeScreen(){
         viewPager = (ViewPager) findViewById(R.id.pager);
         tabLayout = (TabLayout) findViewById(R.id.tab_layout);
@@ -107,6 +118,9 @@ public class MainActivity extends BaseActivity
 
         setSupportActionBar(toolbar);
         getSupportActionBar().setElevation(0);
+        if (!isMyServiceRunning(NotificationListener.class)){
+            startService(new Intent(this, NotificationListener.class));
+        }
 
 
 //        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
@@ -166,7 +180,12 @@ public class MainActivity extends BaseActivity
                     dUemail.setText(user.getEmail());
 
                     if(user.getPhoto() != null && !user.getPhoto().isEmpty())
-                        new DownLoadImageTask(dUphoto).execute(user.getPhoto());
+//                        new DownLoadImageTask(dUphoto).execute(user.getPhoto());
+                        Picasso.with(getApplicationContext())
+                                .load(user.getPhoto())
+//                                            .resize(50, 50)
+//                                            .centerCrop()
+                                .into(dUphoto);
                 }
             }
 

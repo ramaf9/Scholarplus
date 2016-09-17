@@ -18,7 +18,6 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.v1.firebase.scholarplus.R;
-import com.v1.firebase.scholarplus.service.NotificationListener;
 import com.v1.firebase.scholarplus.ui.login.LoginActivity;
 import com.v1.firebase.scholarplus.ui.login.RegisterActivity;
 import com.v1.firebase.scholarplus.utils.Constants;
@@ -39,7 +38,7 @@ public abstract class BaseActivity extends AppCompatActivity implements
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mFirebaseAuthRef = FirebaseAuth.getInstance();
-        startService(new Intent(this, NotificationListener.class));
+
 
         mLoadingProgressDialog = new ProgressDialog(this);
         mLoadingProgressDialog.setTitle(getString(R.string.progress_dialog_loading));

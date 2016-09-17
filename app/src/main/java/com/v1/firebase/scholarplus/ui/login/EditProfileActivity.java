@@ -225,7 +225,12 @@ public class EditProfileActivity extends BaseActivity {
             }
         });
 
-
+        mEditDOB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                setDOB();
+            }
+        });
         final FirebaseUser user = mFirebaseAuthRef.getCurrentUser();
         final DatabaseReference databaseUser = FirebaseDatabase.getInstance().getReference(Constants.KEY_USERS+"/"+user.getUid());
 
@@ -273,76 +278,79 @@ public class EditProfileActivity extends BaseActivity {
     public void onSavePressed(View view){
         if (adapter != null)
             adapter.clear();
-        final FirebaseUser user = mFirebaseAuthRef.getCurrentUser();
-        final DatabaseReference databaseUser = FirebaseDatabase.getInstance().getReference(Constants.KEY_USERS+"/"+user.getUid());
+        if (!mEditIpk.getText().toString().matches("") && !mEditSemester.getText().toString().matches("") && !mEditInstitut.getText().toString().matches("") && !mEditFakultas.getText().toString().matches("")
+                && !mEditJurusan.getText().toString().matches("")) {
+            final FirebaseUser user = mFirebaseAuthRef.getCurrentUser();
+            final DatabaseReference databaseUser = FirebaseDatabase.getInstance().getReference(Constants.KEY_USERS + "/" + user.getUid());
 
-        HashMap<String,Object> profile = new HashMap<>();
-        try {
-            Log.d("AAAA",upperCasing(mEditUsername.getText().toString()));
-            profile.put(Constants.FIREBASE_PROPERTY_NAME, upperCasing(mEditUsername.getText().toString()) );
-            profile.put(Constants.FIREBASE_PROPERTY_EMAIL, user.getEmail());
-            profile.put(Constants.FIREBASE_PROPERTY_DOB, mEditDOB.getText().toString());
-            profile.put(Constants.FIREBASE_PROPERTY_PROVINCE, upperCasing(mEditProvince.getText().toString()) );
-            profile.put(Constants.FIREBASE_PROPERTY_CITY, upperCasing(mEditCity.getText().toString()) );
+            HashMap<String, Object> profile = new HashMap<>();
+            try {
 
-            profile.put(Constants.FIREBASE_PROPERTY_INSTITUT, upperCasing(mEditInstitut.getText().toString()) );
-            profile.put(Constants.FIREBASE_PROPERTY_FAKULTAS, upperCasing(mEditFakultas.getText().toString()) );
-            profile.put(Constants.FIREBASE_PROPERTY_JURUSAN, upperCasing(mEditJurusan.getText().toString()) );
-            profile.put(Constants.FIREBASE_PROPERTY_SEMESTER, mEditSemester.getText().toString());
-            profile.put(Constants.FIREBASE_PROPERTY_IPK, mEditIpk.getText().toString());
+                profile.put(Constants.FIREBASE_PROPERTY_NAME, upperCasing(mEditUsername.getText().toString()));
+                profile.put(Constants.FIREBASE_PROPERTY_EMAIL, user.getEmail());
+                profile.put(Constants.FIREBASE_PROPERTY_DOB, mEditDOB.getText().toString());
+                profile.put(Constants.FIREBASE_PROPERTY_PROVINCE, upperCasing(mEditProvince.getText().toString()));
+                profile.put(Constants.FIREBASE_PROPERTY_CITY, upperCasing(mEditCity.getText().toString()));
 
-            profile.put(Constants.FIREBASE_PROPERTY_CV,cvUri);
+                profile.put(Constants.FIREBASE_PROPERTY_INSTITUT, upperCasing(mEditInstitut.getText().toString()));
+                profile.put(Constants.FIREBASE_PROPERTY_FAKULTAS, upperCasing(mEditFakultas.getText().toString()));
+                profile.put(Constants.FIREBASE_PROPERTY_JURUSAN, upperCasing(mEditJurusan.getText().toString()));
+                profile.put(Constants.FIREBASE_PROPERTY_SEMESTER, mEditSemester.getText().toString());
+                profile.put(Constants.FIREBASE_PROPERTY_IPK, mEditIpk.getText().toString());
 
-
-        } catch (Exception e) {
-            e.printStackTrace();
-
-        }
+                profile.put(Constants.FIREBASE_PROPERTY_CV, cvUri);
 
 
-        if (newStatus == false){
-            databaseUser.updateChildren(profile).addOnCompleteListener(new OnCompleteListener<Void>() {
-                @Override
-                public void onComplete(@NonNull Task<Void> task) {
-                    if (task.isSuccessful()) {
-                        Intent intent = new Intent(EditProfileActivity.this, MainActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        startActivity(intent);
-                        finish();
+            } catch (Exception e) {
+                e.printStackTrace();
+
+            }
+
+
+            if (newStatus == false) {
+                databaseUser.updateChildren(profile).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Intent intent = new Intent(EditProfileActivity.this, MainActivity.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(intent);
+                            finish();
+                        } else {
+                            task.getResult();
+                            task.getException();
+                        }
                     }
-                    else{
-                        task.getResult();
-                        task.getException();
+                });
+            } else {
+                HashMap<String, Object> timestampJoined = new HashMap<>();
+                timestampJoined.put(Constants.FIREBASE_PROPERTY_TIMESTAMP, ServerValue.TIMESTAMP);
+
+                User newUser = new User(profile, timestampJoined);
+
+                databaseUser.setValue(newUser).addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if (task.isSuccessful()) {
+                            Intent intent = new Intent(EditProfileActivity.this, MainActivity.class);
+                            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(intent);
+                            finish();
+                        } else {
+                            task.getResult();
+                            task.getException();
+                        }
                     }
-                }
-            });
+                });
+            }
+
         }
         else{
-            HashMap<String, Object> timestampJoined = new HashMap<>();
-            timestampJoined.put(Constants.FIREBASE_PROPERTY_TIMESTAMP, ServerValue.TIMESTAMP);
-
-            User newUser = new User(profile, timestampJoined);
-
-            databaseUser.setValue(newUser).addOnCompleteListener(new OnCompleteListener<Void>() {
-                @Override
-                public void onComplete(@NonNull Task<Void> task) {
-                    if (task.isSuccessful()) {
-                        Intent intent = new Intent(EditProfileActivity.this, MainActivity.class);
-                        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                        startActivity(intent);
-                        finish();
-                    }
-                    else{
-                        task.getResult();
-                        task.getException();
-                    }
-                }
-            });
+            Toast.makeText(this, "Tolong isi data yang kosong", Toast.LENGTH_SHORT).show();
+            return;
         }
-
-
     }
-    public void setDOB(View v){
+    public void setDOB(){
         DialogFragment newFragment = new Datepicker();
         newFragment.show(EditProfileActivity.this.getFragmentManager(), "Datepicker");
     }
