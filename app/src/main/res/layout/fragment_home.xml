@@ -153,6 +153,11 @@
 
 </android.support.design.widget.CoordinatorLayout>
 
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -160,10 +165,12 @@
         android:layout_marginLeft="12dp"
         android:paddingTop="12dp">
 
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
 
             <TextView
                 android:layout_width="wrap_content"

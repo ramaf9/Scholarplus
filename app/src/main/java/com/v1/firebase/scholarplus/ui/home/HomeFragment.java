@@ -18,8 +18,15 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.daimajia.slider.library.Animations.DescriptionAnimation;
+import com.daimajia.slider.library.SliderLayout;
+import com.daimajia.slider.library.SliderTypes.BaseSliderView;
+import com.daimajia.slider.library.SliderTypes.TextSliderView;
+import com.daimajia.slider.library.Tricks.ViewPagerEx;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -34,11 +41,12 @@ import com.v1.firebase.scholarplus.ui.scholarlist.ScholarListDetailActivity;
 import com.v1.firebase.scholarplus.utils.Constants;
 
 import java.io.ByteArrayOutputStream;
+import java.util.HashMap;
 
 /**
  * Created by sekartanjung on 6/8/16.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements BaseSliderView.OnSliderClickListener, ViewPagerEx.OnPageChangeListener {
     private DatabaseReference mFirebaseDatabaseReference;
     private FirebaseRecyclerAdapter<News, HomeViewHolder>
             mFirebaseAdapter;
@@ -53,6 +61,8 @@ public class HomeFragment extends Fragment {
     private String userChoosenTask;
     private int count = 0;
     private CoordinatorLayout cl_recommended;
+    private SliderLayout mDemoSlider;
+    private HashMap<String,String> url_maps;
     public HomeFragment() {
         /* Required empty public constructor */
     }
@@ -88,6 +98,7 @@ public class HomeFragment extends Fragment {
         mRecRecyclerView = (RecyclerView) rootView.findViewById(R.id.list_view_recommended);
         mLinearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         mProgressBar = (ProgressBar) rootView.findViewById(R.id.progressBar);
+        mDemoSlider = (SliderLayout)rootView.findViewById(R.id.slider);
         mLinearLayoutManager.setReverseLayout(true);
         mLinearLayoutManager.setStackFromEnd(true);
 
@@ -96,6 +107,70 @@ public class HomeFragment extends Fragment {
         mLinearLayoutManager2.setStackFromEnd(true);
 
         mFirebaseDatabaseReference = FirebaseDatabase.getInstance().getReference();
+
+        url_maps = new HashMap<String, String>();
+        DatabaseReference ref = mFirebaseDatabaseReference;
+        ref.child("news").addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                if (dataSnapshot != null){
+                    News data = dataSnapshot.getValue(News.class);
+                    url_maps.put(data.getNama(),data.getPhotopath());
+
+                   String key =  url_maps.keySet().toArray()[0].toString();
+//                    for(String name : url_maps.keySet()){
+                        TextSliderView textSliderView = new TextSliderView(getContext());
+                        // initialize a SliderLayout
+                        textSliderView
+                                .description(key)
+                                .image(url_maps.get(key))
+                                .setScaleType(BaseSliderView.ScaleType.Fit);
+
+                        //add your extra information
+                        textSliderView.bundle(new Bundle());
+                        textSliderView.getBundle()
+                                .putString("extra",key);
+
+                    
+                    mDemoSlider.addSlider(textSliderView);
+//                    }
+                }
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+
+        HashMap<String,Integer> file_maps = new HashMap<String, Integer>();
+        file_maps.put("Hannibal",R.drawable.common_full_open_on_phone);
+        file_maps.put("Big Bang Theory",R.drawable.common_full_open_on_phone);
+        file_maps.put("House of Cards",R.drawable.common_full_open_on_phone);
+        file_maps.put("Game of Thrones", R.drawable.common_full_open_on_phone);
+
+
+        mDemoSlider.setPresetTransformer(SliderLayout.Transformer.Accordion);
+        mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
+        mDemoSlider.setCustomAnimation(new DescriptionAnimation());
+        mDemoSlider.setDuration(4000);
+        mDemoSlider.addOnPageChangeListener(this);
+
 
         DatabaseReference recDatabase = mFirebaseDatabaseReference;
         rec = recDatabase.child(Constants.KEY_USERS+"/"+uid).addValueEventListener(new ValueEventListener() {
@@ -288,6 +363,21 @@ public class HomeFragment extends Fragment {
         super.onStop();
         Log.d("Status","stop");
 
+    }
+    @Override
+    public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {}
+
+    @Override
+    public void onPageSelected(int position) {
+        Log.d("Slider Demo", "Page Changed: " + position);
+    }
+
+    @Override
+    public void onPageScrollStateChanged(int state) {}
+
+    @Override
+    public void onSliderClick(BaseSliderView slider) {
+        Toast.makeText(getContext(),slider.getBundle().get("extra") + "",Toast.LENGTH_SHORT).show();
     }
 
     @Override

@@ -33,8 +33,8 @@ public class ScholarListAdapter extends FirebaseRecyclerAdapter<Scholarship, Sch
     protected void populateViewHolder(final ScholarListFragment.ScholarshipViewHolder viewHolder,final Scholarship model, int position) {
         mProgressBar.setVisibility(ProgressBar.INVISIBLE);
         viewHolder.createdByUser.setText(model.getNama());
-        viewHolder.ipk.setText("IPK "+model.getKuantitatif().get(Constants.FIREBASE_PROPERTY_IPK).toString());
-        viewHolder.website.setText(model.getInstansi());
+        viewHolder.ipk.setText("min IPK "+model.getKuantitatif().get(Constants.FIREBASE_PROPERTY_IPK).toString());
+        viewHolder.website.setText("min Semester "+model.getKuantitatif().get(Constants.FIREBASE_PROPERTY_SEMESTER).toString());
         try{
             String duedate = Constants.getMonth(model.getDuedate());
             viewHolder.duedate.setText(duedate);
