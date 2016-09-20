@@ -240,11 +240,14 @@ public abstract class SortAdapter<T, VH extends RecyclerView.ViewHolder> extends
 //        a = mTemp;
         String dataSearch = data.get(0);
         Double dataIpk = 0.0;
+        String dataJenis = "semua";
         if (!data.get(1).isEmpty())
             dataIpk = Double.parseDouble(data.get(1));
         int dataSemester = 0;
         if (!data.get(2).isEmpty())
             dataSemester = Integer.parseInt(data.get(2));
+        if (!data.get(3).equalsIgnoreCase("semua"))
+            dataJenis = data.get(3).toString();
         if (!dataSearch.isEmpty()){
             for (int i=0;i < mModels.size();i++) {
                 mTemp.add(mModels.get(i));
@@ -265,8 +268,9 @@ public abstract class SortAdapter<T, VH extends RecyclerView.ViewHolder> extends
                 mTemp.add(mModels.get(i));
                 String mIpk = mModels.get(i).getKuantitatif().get(Constants.FIREBASE_PROPERTY_IPK).toString();
                 String mSemester = mModels.get(i).getKuantitatif().get(Constants.FIREBASE_PROPERTY_SEMESTER).toString();
-                if (dataIpk > Double.parseDouble(mIpk) || dataSemester > Integer.parseInt(mSemester)) {
-                    Log.d("removed",mModels.get(i).getNama());
+                String mTipe = mModels.get(i).getJenis();
+                if (dataIpk > Double.parseDouble(mIpk) || dataSemester > Integer.parseInt(mSemester) || (dataJenis.equalsIgnoreCase(mTipe) && !dataJenis.equalsIgnoreCase("semua"))) {
+                    Log.d("removed",mModels.get(i).getNama()+" "+dataJenis);
                     mModels.remove(i);
                     i--;
 

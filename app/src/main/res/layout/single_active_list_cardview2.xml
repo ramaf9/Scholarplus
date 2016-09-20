@@ -108,9 +108,10 @@
                 android:id="@+id/taptosimor"
                 android:layout_width="90dp"
                 android:layout_height="wrap_content"
-                android:text="Tap to see more"
+                android:text="Tap to share"
                 android:textSize="10sp"
                 android:layout_gravity="left"
+                android:onClick="shareIntent"
                 android:textAlignment="center"
                 android:textColor="@color/base"/>
 

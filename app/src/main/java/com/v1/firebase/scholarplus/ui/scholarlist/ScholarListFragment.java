@@ -218,6 +218,7 @@ public class ScholarListFragment extends Fragment {
         Query ref= mFirebaseDatabaseReference.child(Constants.FIREBASE_PROPERTY_BEASISWA);
         indexScholarship(null,Constants.VALUE_ASAL_DN);
     }
+
     private void scholarshipLn(){
         btnLn.setBackgroundResource(R.drawable.shape4);
         btnDn.setBackgroundResource(R.color.iron);
@@ -309,7 +310,7 @@ public class ScholarListFragment extends Fragment {
     @Override
     public void onStop() {
         super.onStop();
-        mCustomAdapter.cleanup();
+//        mCustomAdapter.cleanup();
 
 
     }
@@ -339,7 +340,7 @@ public class ScholarListFragment extends Fragment {
     public static class ScholarshipViewHolder extends RecyclerView.ViewHolder {
         public TextView createdByUser;
         public TextView ipk;
-        public TextView website,duedate;
+        public TextView website,duedate,taptoshare;
         public ImageView photoBy;
         public View mView;
 
@@ -351,6 +352,7 @@ public class ScholarListFragment extends Fragment {
             ipk = (TextView)itemView.findViewById(R.id.ipkkuh);
             website = (TextView) itemView.findViewById(R.id.web_beasiswa);
             duedate = (TextView) itemView.findViewById(R.id.duedatess);
+            taptoshare = (TextView) itemView.findViewById(R.id.taptosimor);
         }
 
     }

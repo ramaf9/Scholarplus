@@ -7,20 +7,22 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.DialogFragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 
+import com.google.firebase.database.ChildEventListener;
 import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.v1.firebase.scholarplus.R;
-import com.v1.firebase.scholarplus.model.User;
+import com.v1.firebase.scholarplus.model.Scholarship;
 import com.v1.firebase.scholarplus.utils.Constants;
 
 import java.util.ArrayList;
@@ -30,13 +32,14 @@ import java.util.ArrayList;
  */
 public class FilterDialogFragment extends DialogFragment {
 
-    private DatabaseReference mFirebaseDatabaseReference;
-    private Spinner regionSpinner,studySpinner;
+    private DatabaseReference mTipeBeasiswaRef;
+    private Spinner regionSpinner,studySpinner,tipeBeasiswaSpinner;
     private Button advSearch;
     private EditText edtSearch,edtIpk,edtSemester;
     private LinearLayout actionAdvSearch;
     private ArrayList<String> regionList = new ArrayList<>();
     private ArrayList<String> studyList = new ArrayList<>();
+    private ArrayList<String> tipeBeasiswaList = new ArrayList<>();
     private int advToggle = 0;
     private ScholarListFragment mClass;
     private String mSort;
@@ -74,12 +77,13 @@ public class FilterDialogFragment extends DialogFragment {
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         // Use the Builder class for convenient dialog construction
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), R.style.CustomTheme_Dialog);
-        mFirebaseDatabaseReference = FirebaseDatabase.getInstance().getReference(Constants.KEY_USERS);
+        mTipeBeasiswaRef = FirebaseDatabase.getInstance().getReference(Constants.FIREBASE_PROPERTY_BEASISWA);
         // Get the layout inflater
         LayoutInflater inflater = getActivity().getLayoutInflater();
         View rootView = inflater.inflate(R.layout.dialog_filter, null);
 //        regionSpinner = (Spinner) rootView.findViewById(R.id.spinner_region);
 //        studySpinner = (Spinner) rootView.findViewById(R.id.spinner_majorstudy);
+        tipeBeasiswaSpinner = (Spinner) rootView.findViewById(R.id.spn_tipebeasiswa);
         edtSearch = (EditText) rootView.findViewById(R.id.edit_name);
         edtIpk = (EditText) rootView.findViewById(R.id.edit_ipk);
         edtSemester = (EditText) rootView.findViewById(R.id.edit_semester);
@@ -99,38 +103,44 @@ public class FilterDialogFragment extends DialogFragment {
                 }
             }
         });
+        tipeBeasiswaList.add("Semua");
 //
-//        mFirebaseDatabaseReference.addChildEventListener(new ChildEventListener() {
-//            @Override
-//            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-//                fetchData(dataSnapshot);
-//
-//            }
-//
-//            @Override
-//            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-//                fetchData(dataSnapshot);
-//
-//            }
-//
-//            @Override
-//            public void onChildRemoved(DataSnapshot dataSnapshot) {
-//                fetchData(dataSnapshot);
-//
-//            }
-//
-//            @Override
-//            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-//                fetchData(dataSnapshot);
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(DatabaseError databaseError) {
-//
-//            }
-//        });
-//        setAdapter();
+        mTipeBeasiswaRef.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+                if (dataSnapshot != null)
+                    fetchData(dataSnapshot);
+
+
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+                if (dataSnapshot != null)
+                    fetchData(dataSnapshot);
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+                if (dataSnapshot != null)
+                    fetchData(dataSnapshot);
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+                if (dataSnapshot != null)
+                    fetchData(dataSnapshot);
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError) {
+
+            }
+        });
+        setAdapter();
 //        mEditTextListName = (EditText) rootView.findViewById(R.id.edit_text_list_name);
 
         /**
@@ -157,9 +167,7 @@ public class FilterDialogFragment extends DialogFragment {
                         input.add(edtSearch.getText().toString());
                         input.add(edtIpk.getText().toString());
                         input.add(edtSemester.getText().toString());
-                        Log.d("test",edtSearch.getText().toString());
-                        Log.d("test",edtIpk.getText().toString());
-                        Log.d("test",edtSemester.getText().toString());
+                        input.add(tipeBeasiswaSpinner.getSelectedItem().toString());
 
                         Intent data = new Intent();
                         data.putExtra("input",input);
@@ -182,28 +190,34 @@ public class FilterDialogFragment extends DialogFragment {
     private void fetchData(DataSnapshot dataSnapshot){
 //        studyList.clear();
 //        regionList.clear();
-        User data = dataSnapshot.getValue(User.class);
-        if (!data.getCity().isEmpty() && !regionList.contains(data.getCity()))
-            regionList.add(data.getCity());
-        if (!data.getJurusan().isEmpty() && !studyList.contains(data.getJurusan()))
-            studyList.add(data.getJurusan());
+        Scholarship data = dataSnapshot.getValue(Scholarship.class);
+//        if (!data.getCity().isEmpty() && !regionList.contains(data.getCity()))
+//            regionList.add(data.getCity());
+//        if (!data.getJurusan().isEmpty() && !studyList.contains(data.getJurusan()))
+//            studyList.add(data.getJurusan());
+        if (!data.getJenis().isEmpty() && !tipeBeasiswaList.contains(data.getJenis()))
+            tipeBeasiswaList.add(data.getJenis());
+
+
+
 //        if (!regionList.contains(data.getCity()))
 //            regionList.add(data.getCity());
 //        if (!studyList.contains(data.getJurusan()))
 //            studyList.add(data.getJurusan());
-        for (DataSnapshot ds:dataSnapshot.getChildren()){
+//        for (DataSnapshot ds:dataSnapshot.getChildren()){
 //            User data = ds.getValue(User.class);
 //            if (!regionList.contains(data.getCity()))
 //                regionList.add(data.getCity());
 //            if (!studyList.contains(data.getJurusan()))
 //                studyList.add(data.getJurusan());
-        }
+//        }
 
     }
-//    private void setAdapter(){
-//
+    private void setAdapter(){
+
 //        regionSpinner.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,regionList));
 //        studySpinner.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,studyList));
-//
-//    }
+        tipeBeasiswaSpinner.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,tipeBeasiswaList));
+        tipeBeasiswaSpinner.setSelection(0);
+    }
 }

@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.Snackbar;
@@ -67,7 +68,9 @@ public class ScholarListDetailActivity extends BaseActivity {
     }
 
     public void onApplyPressed(View view) {
-        confirmDialog();
+//        confirmDialog();
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("http://"+scholarship.getWeb()));
+        startActivity(browserIntent);
     }
 
     private void confirmDialog() {
