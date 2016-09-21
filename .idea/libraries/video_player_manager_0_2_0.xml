@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="video-player-manager-0.2.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.danylovolokh/video-player-manager/0.2.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.github.danylovolokh/video-player-manager/0.2.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.danylovolokh/video-player-manager/0.2.0/640cca3e76bc7e6fafd466e9e771c8aa32a45f94/video-player-manager-0.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

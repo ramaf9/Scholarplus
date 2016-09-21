@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="material-camera-0.2.14">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.afollestad/material-camera/0.2.14/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.afollestad/material-camera/0.2.14/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.afollestad/material-camera/0.2.14/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad/material-camera/0.2.14/72d4703494939b721bc9f5e7024f9781b886812c/material-camera-0.2.14-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -165,7 +165,7 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
         file_maps.put("Game of Thrones", R.drawable.common_full_open_on_phone);
 
 
-        mDemoSlider.setPresetTransformer(SliderLayout.Transformer.Accordion);
+        mDemoSlider.setPresetTransformer(SliderLayout.Transformer.Default);
         mDemoSlider.setPresetIndicator(SliderLayout.PresetIndicators.Center_Bottom);
         mDemoSlider.setCustomAnimation(new DescriptionAnimation());
         mDemoSlider.setDuration(4000);

@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.mikhaellopez\circularimageview\3.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.mikhaellopez-circularimageview-3.0.2_f8e19ee12c39913b0df6141826e56a8358277aef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.afollestad\material-camera\0.2.14\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9b1f1d4392deef8da7e3783b15a3acdc0668a394">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.afollestad-material-camera-0.2.14_0032f2f67f3f4965635aa8397934e02e3b9c047c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.getbase\floatingactionbutton\1.10.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f40cf334cdc8b098b74312e21c7741c6eefbeb0e">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.getbase-floatingactionbutton-1.10.1_0fb28625b6a90f221de16b78d93b67771769c8b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.0.2_a97ac8b5ef69fc09d86d701c96f43da70396bf0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.3.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\de.hdodenhof-circleimageview-1.3.0_2aa458ebcb224cf9fd70a4fc3b041d2e510fe99f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="94d9cedd04b124aed044ac71c451a292856d854c">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.0.2_3a40c04478a55b7a91e9d201a7e9705416141b89.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.github.danylovolokh\video-player-manager\0.2.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="919661fb65990cb40ac9f8b95247de43a7a4ac3c">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.github.danylovolokh-video-player-manager-0.2.0_360e7c31563061513f31aa560499f064e175d18f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.daimajia.slider\library\1.1.5\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.daimajia.slider-library-1.1.5_ca10406d75109f1e0c0467a1858ae7227da7ade5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.firebaseui\firebase-ui-database\0.4.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="c76f6507a42aec274953e882bf3c49a570843ef5">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.firebaseui-firebase-ui-database-0.4.0_4c7ae91bb1677a036302cca0aeb770123df10b53.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.0.0_09762bf801ed7929d429f861d1746a84037bd939.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_5447b8f2605f40daf72f30501f2da73dcc334111.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.0.0_fd6ce5b392ed5d1390063f6822ad44e08611ee81.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.0.0_7b5ba88edf005bfca7713e18b1130ff0d32401ad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.android.support\design\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.0.0_a59bc6900f32a0cce23fca943d99a25e8e1ea3ed.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.github.clans\fab\1.6.4\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.github.clans-fab-1.6.4_90622220a5c6d4a0161e5d093f96592e13ce0a31.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-module-9.0.2_7599544e8d3f40ed24b27d3f1fa0aa1a4beb5c59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.0.2_bc5dda554796bc5d78f7b98ea565a08026361ba6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-9.0.2_3ece3bc1ac8f180d95e9bca31e8389e81b3e537c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\.gradle\caches\modules-2\files-2.1\com.nineoldandroids\library\2.4.0\e9b63380f3a242dbdbf103a2355ad7e43bad17cb\library-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\library-2.4.0_b9183e0b0936459e47b673108fb0d2408e89bd6c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7da84426d876216ed4cdddd85e739be5ecabdd04">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-9.0.0_41aae7278eb3c7b028515a7907237602c023f5b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.0.2_04e1d272fc2c7641ac9d8add552209451ef13525.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="cd4c7c54e15d9ccbc448384fa2c4684d69ca73f0">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-storage-9.0.2_279e9d8b53863962ba415da45718b4e80a82b9f3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-common-9.0.2_2e67d3f225f75d17f20296bf9fb742eee1f97d85.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.0.2_f001da8e130a513f0c1c2127ce9648243a790d3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.0.0_774132a75dfbdb94de5990aaea1168e052f3edf5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7a23185c9b1c100e7d1a32275017e4712e31c796">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-9.0.0_6f1deaf4eec622a385c37d9a4c48f7153c47e8d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-9.0.2_6dbd4799cda786a35af41a0473f61596273bcaad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0\support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\support-annotations-24.0.0_337759015d20ce9b284d40748b8a20a116b98ce5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.0.2_bd5e3ab4cb166d1b8591296be9940c41d5c95402.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.0.2_ea0621fbaff820f7f43e068339fe5e0ad41159b5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.afollestad\easyvideoplayer\0.2.8\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2c976c4ef99daf62fc2d4c9e81918f8f973da193">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.afollestad-easyvideoplayer-0.2.8_ba276b1be42d860cf3e1d681d437fc6c3adef982.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6ff48ef26bc539c78af4aa061cb9bad6abcbf5e8">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-storage-common-9.0.2_2ca06ad967f273b1fb2d036f43703622e32ea382.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.0.0_cc4b45e5a35abcf49939dc2d33770eca14b52b7c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-9.0.2_2e9b25986a06bbab09c14ff8c4f357eb246e0c7d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.0.2\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f2774b1e02e5fbc524590311a744263c3b152d63">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-messaging-9.0.2_ee3427fb8adb0223c6cc53f78e2598d1042ccccb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.afollestad.material-dialogs\core\0.8.6.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d3cec13eea6c9b017d968a80a277ab9196df58f6">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.afollestad.material-dialogs-core-0.8.6.0_2ace07860a2421a704aca226c521f83bb8118136.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\.gradle\caches\modules-2\files-2.1\com.squareup.picasso\picasso\2.5.2\7446d06ec8d4f7ffcc53f1da37c95f200dcb9387\picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\picasso-2.5.2_748c2164956fc27e5d7a8ab0a945a47450c69aad.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\me.zhanghai.android.materialprogressbar\library\1.1.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ab3193b438e37f7b0a634cc2dfebbf92892ea90c">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\me.zhanghai.android.materialprogressbar-library-1.1.6_ecc32ff4b551cbc45a0458750ba06dd9256cc457.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="C:\Users\Inan\Documents\Scholarplus GitHub\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.0.0_ec2322a98f45e0aeb175118842b57ebfb6a923ea.jar" />
+    </item>
+
+</items>

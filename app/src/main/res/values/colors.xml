@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#ee684b</color>
-    <color name="colorPrimaryDark">#c85b44</color>
+    <color name="colorPrimary">#399cc6</color>
+    <color name="colorPrimaryDark">#3585a8</color>
     <color name="colorPrimaryDarker">#a64c39</color>
-    <color name="colorAccent">#399cc6</color>
+    <color name="colorAccent">#ee684b</color>
     <color name="dark_layout">#424242</color>
 
     <color name="black">#000000</color>
@@ -15,7 +15,7 @@
     <color name="base">#AAAAAA</color>
     <color name="iron">#CCCCCC</color>
     <color name="white">#FFFFFF</color>
-    <color name="unselected">#f7b4a4</color>
+    <color name="unselected">#9ccfe4</color>
     <color name="ijo">#9ccc66</color>
     <color name="orange">#fc7244</color>
     <color name="dark_design">#343434</color>
