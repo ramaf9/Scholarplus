@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="easyvideoplayer-0.2.8">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.2.8/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.2.8/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.2.8/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.afollestad/easyvideoplayer/0.2.8/d1528b77576f0132cfca0d4c296de8c7ce390c99/easyvideoplayer-0.2.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

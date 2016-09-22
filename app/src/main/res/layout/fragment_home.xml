@@ -14,13 +14,82 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:paddingBottom="24dp">
+    android:paddingBottom="24dp"
+    android:background="@drawable/bghihik2">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sekola"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/tahubulat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tahukah Anda ?"
+            android:textColor="@color/white"
+            android:paddingLeft="16dp"
+            android:textStyle="bold"
+            android:paddingTop="16dp"/>
+        <TextView
+            android:id="@+id/tahubulats"
+            android:layout_below="@id/tahubulat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ternyata"
+            android:textColor="@color/white"
+            android:paddingLeft="16dp"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/tahubulat"
+            android:id="@+id/mantab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="69%"
+            android:textStyle="bold"
+            android:textSize="80sp"
+            android:textColor="@color/white"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/hihijq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:text="Sudah sepantasnya kita bersyukur"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
+            android:paddingRight="16dp"
+            android:paddingBottom="16dp"/>
+
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anak Indonesia Putus Sekolah ?"
+            android:layout_alignParentRight="true"
+            android:textStyle="bold"
+            android:layout_above="@id/hihijq"
+            android:textColor="@color/white"
+            android:paddingRight="16dp"/>
+
+
+
+    </RelativeLayout>
 
     <com.daimajia.slider.library.SliderLayout
         android:id="@+id/slider"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:layout_marginBottom="8dp"
         />
 
 
@@ -36,10 +105,11 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:orientation="vertical"
+           >
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingTop="12dp"
@@ -54,30 +124,24 @@
                     android:layout_width="55dp"
                     android:layout_height="55dp" />
 
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
+                <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:paddingTop="12dp"
                         android:text="Welcome"
                         android:textSize="25sp"
-                        android:textColor="@color/oil"
+                        android:textColor="@color/white"
                         android:textStyle="bold"
                         android:layout_marginLeft="18dp"/>
 
-                    <TextView
-                        android:id="@+id/tv_welcome"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:textSize="13dp"
-                        android:textColor="@color/monsoon"
-                        android:layout_marginLeft="18dp"/>
 
-
-                </LinearLayout>
+                <TextView
+                    android:id="@+id/tv_welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:textColor="@color/white"
+                    android:layout_marginLeft="18dp"/>
 
                 <ProgressBar
                     style="?android:attr/progressBarStyleLarge"
@@ -173,12 +237,6 @@
         </LinearLayout>
 
 
-
-
-
-
-
-
 </android.support.design.widget.CoordinatorLayout>
 
 
@@ -248,7 +306,7 @@
                 android:layout_height="wrap_content"
                 android:text="Scholar Event"
                 android:textSize="25sp"
-                android:textColor="@color/oil"
+                android:textColor="@color/white"
                 android:textStyle="bold"
                 android:layout_marginLeft="18dp"/>
 
@@ -257,7 +315,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="13dp"
                 android:text="Be informed. Provided by scholarplus"
-                android:textColor="@color/monsoon"
+                android:textColor="@color/base"
                 android:layout_marginLeft="18dp"/>
 
         </LinearLayout>
@@ -266,7 +324,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="25dp"
-            android:src="@drawable/ic_building"
+            android:src="@mipmap/ic_buildingk"
             android:layout_gravity="right"/>
 
     </LinearLayout>
@@ -286,12 +344,7 @@
             android:layout_height="match_parent"
             android:isScrollContainer="false"
             android:nestedScrollingEnabled="false"
-            android:scrollbars="none"
-<<<<<<< HEAD
-            android:visibility="gone"
-=======
->>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            android:scrollbars="none" />
     </android.support.design.widget.CoordinatorLayout>
 
 

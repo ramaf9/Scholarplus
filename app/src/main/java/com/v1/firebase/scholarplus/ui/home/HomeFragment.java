@@ -9,10 +9,7 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-<<<<<<< HEAD
-=======
 import android.text.Html;
->>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -223,10 +220,9 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
                                         byte[] b = baos.toByteArray();
 
                                         i.putExtra(Constants.FIREBASE_PROPERTY_BEASISWA, scholarship);
-<<<<<<< HEAD
+
                                         i.putExtra(Constants.DETAIL_BG_PHOTO,scholarship.getBgphotopath());
-=======
->>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
+
                                         i.putExtra(Constants.DETAIL_PHOTO,b);
                                         i.putExtra(Constants.KEY_ID,itemId);
                                         startActivity(i);
@@ -259,7 +255,7 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
         });
 
 
-<<<<<<< HEAD
+
 //        mFirebaseAdapter = new FirebaseRecyclerAdapter<News,
 //                HomeViewHolder>(
 //                News.class,
@@ -309,7 +305,7 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
 //
 //            }
 //        };
-=======
+
         mFirebaseAdapter = new FirebaseRecyclerAdapter<News,
                 HomeViewHolder>(
                 News.class,
@@ -359,7 +355,7 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
 
             }
         };
->>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
+
 
 //        mFirebaseAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
 //            @Override

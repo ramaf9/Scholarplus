@@ -24,6 +24,7 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -340,12 +341,10 @@ public class ScholarListFragment extends Fragment {
     public static class ScholarshipViewHolder extends RecyclerView.ViewHolder {
         public TextView createdByUser;
         public TextView ipk;
-        public TextView website,duedate,taptoshare;
-<<<<<<< HEAD
+        public TextView website,duedate;
         public ImageView photoBy,rl_bg;
-=======
-        public ImageView photoBy;
->>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
+        public ImageButton taptoshare;
+
         public View mView;
 
         public ScholarshipViewHolder(View v) {
@@ -356,11 +355,10 @@ public class ScholarListFragment extends Fragment {
             ipk = (TextView)itemView.findViewById(R.id.ipkkuh);
             website = (TextView) itemView.findViewById(R.id.web_beasiswa);
             duedate = (TextView) itemView.findViewById(R.id.duedatess);
-            taptoshare = (TextView) itemView.findViewById(R.id.taptosimor);
-<<<<<<< HEAD
+            taptoshare = (ImageButton) itemView.findViewById(R.id.taptosimor);
+
             rl_bg = (ImageView) itemView.findViewById(R.id.rl_bg);
-=======
->>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
+
         }
 
     }

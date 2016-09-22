@@ -5,10 +5,7 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Environment;
-<<<<<<< HEAD
-=======
 import android.util.Log;
->>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
 import android.view.View;
 import android.widget.ProgressBar;
 
@@ -41,7 +38,6 @@ public class ActionSortAdapter extends SortAdapter<Scholarship, ScholarListFragm
         mProgressBar.setVisibility(ProgressBar.INVISIBLE);
 
         viewHolder.createdByUser.setText(model.getNama());
-<<<<<<< HEAD
         viewHolder.ipk.setText("min IPK "+model.getKuantitatif().get(Constants.FIREBASE_PROPERTY_IPK).toString());
         viewHolder.website.setText("min Semester "+model.getKuantitatif().get(Constants.FIREBASE_PROPERTY_SEMESTER).toString());
         Picasso.with(this.mActivity)
@@ -49,21 +45,19 @@ public class ActionSortAdapter extends SortAdapter<Scholarship, ScholarListFragm
 //                    .resize(50, 50)
 //                    .centerCrop()
                 .into(viewHolder.rl_bg);
-=======
+
         viewHolder.ipk.setText("IPK "+model.getKuantitatif().get(Constants.FIREBASE_PROPERTY_IPK).toString());
         viewHolder.website.setText(model.getInstansi());
->>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
+
         try{
             String duedate = Constants.getMonth(model.getDuedate());
             viewHolder.duedate.setText(duedate);
         }
         catch(ParseException e){
             viewHolder.duedate.setText("-");
-<<<<<<< HEAD
 
-=======
             Log.d("AAA",e.getMessage());
->>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
+
 
         }
 
