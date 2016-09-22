@@ -341,7 +341,11 @@ public class ScholarListFragment extends Fragment {
         public TextView createdByUser;
         public TextView ipk;
         public TextView website,duedate,taptoshare;
+<<<<<<< HEAD
         public ImageView photoBy,rl_bg;
+=======
+        public ImageView photoBy;
+>>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
         public View mView;
 
         public ScholarshipViewHolder(View v) {
@@ -353,7 +357,10 @@ public class ScholarListFragment extends Fragment {
             website = (TextView) itemView.findViewById(R.id.web_beasiswa);
             duedate = (TextView) itemView.findViewById(R.id.duedatess);
             taptoshare = (TextView) itemView.findViewById(R.id.taptosimor);
+<<<<<<< HEAD
             rl_bg = (ImageView) itemView.findViewById(R.id.rl_bg);
+=======
+>>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
         }
 
     }

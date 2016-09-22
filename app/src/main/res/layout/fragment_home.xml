@@ -287,7 +287,10 @@
             android:isScrollContainer="false"
             android:nestedScrollingEnabled="false"
             android:scrollbars="none"
+<<<<<<< HEAD
             android:visibility="gone"
+=======
+>>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
             app:layout_behavior="@string/appbar_scrolling_view_behavior" />
     </android.support.design.widget.CoordinatorLayout>
 

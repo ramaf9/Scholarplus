@@ -9,6 +9,10 @@ import android.support.v4.app.Fragment;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+<<<<<<< HEAD
+=======
+import android.text.Html;
+>>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -219,7 +223,10 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
                                         byte[] b = baos.toByteArray();
 
                                         i.putExtra(Constants.FIREBASE_PROPERTY_BEASISWA, scholarship);
+<<<<<<< HEAD
                                         i.putExtra(Constants.DETAIL_BG_PHOTO,scholarship.getBgphotopath());
+=======
+>>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
                                         i.putExtra(Constants.DETAIL_PHOTO,b);
                                         i.putExtra(Constants.KEY_ID,itemId);
                                         startActivity(i);
@@ -252,6 +259,7 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
         });
 
 
+<<<<<<< HEAD
 //        mFirebaseAdapter = new FirebaseRecyclerAdapter<News,
 //                HomeViewHolder>(
 //                News.class,
@@ -301,6 +309,57 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
 //
 //            }
 //        };
+=======
+        mFirebaseAdapter = new FirebaseRecyclerAdapter<News,
+                HomeViewHolder>(
+                News.class,
+                R.layout.single_active_list_cardview,
+                HomeViewHolder.class,
+                mFirebaseDatabaseReference.child("news")) {
+
+            @Override
+            protected void populateViewHolder(final HomeViewHolder viewHolder,
+                                              News news, int position) {
+                mProgressBar.setVisibility(ProgressBar.INVISIBLE);
+                viewHolder.createdByUser.setText(news.getSource());
+                if (news.getPhotopath() != null)
+//                    new DownLoadImageTask(viewHolder.photoBy).execute(news.getPhotopath());
+                    Picasso.with(getActivity().getApplicationContext())
+                            .load(news.getPhotopath())
+//                                            .resize(50, 50)
+//                                            .centerCrop()
+                            .into(viewHolder.photoBy);
+
+                String s = Html.fromHtml(news.getNama()).toString();
+                final String nama = s;
+
+                final String deskripsi = news.getDeskripsi();
+                    viewHolder.deskripsi.setText(Html.fromHtml(s+"<br><center> <font color='#d36e4c'> <b>See more</b></font></center>"));
+                    viewHolder.deskripsi.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent i = new Intent(getActivity(),NewsDetailActivity.class);
+                            viewHolder.photoBy.buildDrawingCache();
+                            Bitmap bm= viewHolder.photoBy.getDrawingCache();
+                            ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                            bm.compress(Bitmap.CompressFormat.JPEG, 100, baos);
+                            byte[] b = baos.toByteArray();
+
+                            i.putExtra(Constants.DETAIL_PHOTO,b);
+                            i.putExtra(Constants.DETAIL_BY,viewHolder.createdByUser.getText());
+                            i.putExtra(Constants.DETAIL_NAME,nama);
+                            i.putExtra(Constants.DETAIL_DESC,deskripsi);
+                            startActivity(i);
+
+                        }
+                    });
+
+
+
+
+            }
+        };
+>>>>>>> c7f4a471aa588459c5b57e7e4c674f9289938a88
 
 //        mFirebaseAdapter.registerAdapterDataObserver(new RecyclerView.AdapterDataObserver() {
 //            @Override
