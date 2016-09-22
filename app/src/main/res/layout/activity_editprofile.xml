@@ -177,7 +177,19 @@
             android:paddingBottom="12dp"
             android:textColor="@color/ungubukanungu"/>
 
-
+        <Button
+            android:id="@+id/pick_date"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:text="PICK A DATE"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/white"
+            android:textColor="@color/black"
+            />
         <android.support.design.widget.TextInputLayout
             android:id="@+id/til_dob"
             android:layout_width="match_parent"
@@ -187,6 +199,7 @@
             android:paddingBottom="10dp"
             android:paddingLeft="14dp"
             android:paddingRight="@dimen/activity_horizontal_margin">
+
 
             <EditText
                 android:id="@+id/edit_text_dob"

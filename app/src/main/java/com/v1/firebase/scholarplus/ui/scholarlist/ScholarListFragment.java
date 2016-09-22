@@ -22,11 +22,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -56,7 +58,9 @@ public class ScholarListFragment extends Fragment {
     private View rootView;
     private int toggleCat = 1;
     private Button btnDn,btnLn;
+    private Spinner spn_sort;
     private ArrayList<Scholarship> tempSch,sch;
+    private ArrayList<String> tipeSorting = new ArrayList<>();
     public ScholarListFragment() {
         /* Required empty public constructor */
     }
@@ -100,18 +104,18 @@ public class ScholarListFragment extends Fragment {
             case R.id.action_filter:
                 handleMenuFilter();
                 return true;
-            case R.id.action_orderByDifficult:
-//                mLinearLayoutManager.setReverseLayout(true);
-//                mLinearLayoutManager.setStackFromEnd(true);
-                return true;
-            case R.id.action_orderByDuedate:
-//                indexScholarship(Constants.KEY_DUEDATE,getCatAsal());
-                mCustomAdapter.orderBy(Constants.KEY_DUEDATE);
-                return true;
-            case R.id.action_orderByName:
-//                indexScholarship(Constants.KEY_NAMA,getCatAsal());
-                mCustomAdapter.orderBy(Constants.KEY_NAMA);
-                return true;
+//            case R.id.action_orderByDifficult:
+////                mLinearLayoutManager.setReverseLayout(true);
+////                mLinearLayoutManager.setStackFromEnd(true);
+//                return true;
+//            case R.id.action_orderByDuedate:
+////                indexScholarship(Constants.KEY_DUEDATE,getCatAsal());
+//                mCustomAdapter.orderBy(Constants.KEY_DUEDATE);
+//                return true;
+//            case R.id.action_orderByName:
+////                indexScholarship(Constants.KEY_NAMA,getCatAsal());
+//                mCustomAdapter.orderBy(Constants.KEY_NAMA);
+//                return true;
         }
 
         return super.onOptionsItemSelected(item);
@@ -127,6 +131,32 @@ public class ScholarListFragment extends Fragment {
         btnLn = (Button) rootView.findViewById(R.id.cat_overseas);
         mLinearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         mProgressBar = (ProgressBar) rootView.findViewById(R.id.progressBar);
+        spn_sort = (Spinner) rootView.findViewById(R.id.spn_sort);
+
+        tipeSorting.add("nama");
+        tipeSorting.add("tenggat waktu");
+
+        spn_sort.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,tipeSorting));
+
+        spn_sort.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                String sort = "";
+                if (tipeSorting.get(position).equalsIgnoreCase("nama")){
+                    sort = Constants.KEY_NAMA;
+                }
+                else if (tipeSorting.get(position).equalsIgnoreCase("nama")){
+                    sort = Constants.KEY_DUEDATE;
+                }
+                mCustomAdapter.orderBy(sort);
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> parent) {
+
+            }
+        });
+
         sch = new ArrayList<Scholarship>();
         tempSch = new ArrayList<Scholarship>();
 //        mLinearLayoutManager.setReverseLayout(true);
@@ -343,7 +373,7 @@ public class ScholarListFragment extends Fragment {
         public TextView ipk;
         public TextView website,duedate;
         public ImageView photoBy,rl_bg;
-        public ImageButton taptoshare;
+        public Button taptoshare;
 
         public View mView;
 
@@ -355,7 +385,7 @@ public class ScholarListFragment extends Fragment {
             ipk = (TextView)itemView.findViewById(R.id.ipkkuh);
             website = (TextView) itemView.findViewById(R.id.web_beasiswa);
             duedate = (TextView) itemView.findViewById(R.id.duedatess);
-            taptoshare = (ImageButton) itemView.findViewById(R.id.taptosimor);
+            taptoshare = (Button) itemView.findViewById(R.id.taptosimor);
 
             rl_bg = (ImageView) itemView.findViewById(R.id.rl_bg);
 

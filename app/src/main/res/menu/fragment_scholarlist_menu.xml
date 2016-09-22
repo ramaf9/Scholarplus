@@ -14,22 +14,22 @@
         android:orderInCategory="10"
         android:title="Search">
     </item>
-    <item
-        android:id="@+id/action_orderByName"
-        android:title="By Name"
-        app:showAsAction="never"
-        />
-    <item
-        android:id="@+id/action_orderByDuedate"
-        android:title="By Due date"
-        app:showAsAction="never"
-        />
-    <item
-        android:id="@+id/action_orderByDifficult"
-        android:title="By Difficulty"
-        android:visible="false"
-        app:showAsAction="never"
-        />
+    <!--<item-->
+        <!--android:id="@+id/action_orderByName"-->
+        <!--android:title="By Name"-->
+        <!--app:showAsAction="never"-->
+        <!--/>-->
+    <!--<item-->
+        <!--android:id="@+id/action_orderByDuedate"-->
+        <!--android:title="By Due date"-->
+        <!--app:showAsAction="never"-->
+        <!--/>-->
+    <!--<item-->
+        <!--android:id="@+id/action_orderByDifficult"-->
+        <!--android:title="By Difficulty"-->
+        <!--android:visible="false"-->
+        <!--app:showAsAction="never"-->
+        <!--/>-->
 
     <!--<item-->
         <!--android:id="@+id/action_filter"-->

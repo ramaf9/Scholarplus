@@ -53,6 +53,7 @@ import java.util.HashMap;
 public class EditProfileActivity extends BaseActivity {
     private boolean newStatus;
     private EditText mEditUsername,mEditDOB,mEditSemester,mEditIpk;
+    private Button mPickDate;
     private AutoCompleteTextView mEditCity,mEditProvince;
     private AutoCompleteTextView mEditInstitut,mEditFakultas,mEditJurusan;
     private Button editCv;
@@ -210,6 +211,7 @@ public class EditProfileActivity extends BaseActivity {
         mEditCity = (AutoCompleteTextView) findViewById(R.id.edit_text_city);
         mEditProvince = (AutoCompleteTextView)findViewById(R.id.edit_text_province);
         editCv = (Button) findViewById(R.id.btnCv);
+        mPickDate = (Button)findViewById(R.id.pick_date);
 
 
 
@@ -225,7 +227,7 @@ public class EditProfileActivity extends BaseActivity {
             }
         });
 
-        mEditDOB.setOnClickListener(new View.OnClickListener() {
+        mPickDate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 setDOB();

@@ -94,7 +94,30 @@ public class ActionSortAdapter extends SortAdapter<Scholarship, ScholarListFragm
 
                 Intent shareIntent = new Intent();
                 shareIntent.setAction(Intent.ACTION_SEND);
-                shareIntent.putExtra(Intent.EXTRA_TEXT,model.getDeskripsi());
+                String msg = model.getNama()+"\n\n";
+                String kat = "Kategori Beasiswa :\n"+model.getKategori() +" - "+model.getJenis();
+                msg = msg + kat;
+
+                String spersyaratan = "Persyaratan : \n";
+                spersyaratan = spersyaratan + "1. Bidang peminatan " +model.getKuantitatif().get(Constants.FIREBASE_PROPERTY_BIDANG).toString()+"\n";
+                spersyaratan = spersyaratan + "2. IPK minimum "+ model.getKuantitatif().get(Constants.FIREBASE_PROPERTY_IPK).toString()+"\n";
+                spersyaratan = spersyaratan + "3. Semester minimum "+ model.getKuantitatif().get(Constants.FIREBASE_PROPERTY_SEMESTER).toString()+"\n";
+                int c = 4;
+                for (String temp : model.getPersyaratankualitatif()) {
+                    spersyaratan = spersyaratan + c+". "+temp+"\n";
+                    c++;
+                }
+                c= 1;
+                String sberkas = "Berkas :\n";
+                for (String temp : model.getBerkas()) {
+                    sberkas = sberkas + c+". "+temp+"\n";
+                    c++;
+                }
+                String cp = "Kontak/Website :\n"+model.getWeb();
+                String copyright = "\n\n\nSCHOLARPLUS.CO";
+                msg = msg+"\n"+spersyaratan +"\n"+sberkas+"\n"+cp +"\n\n"+copyright;
+
+                shareIntent.putExtra(Intent.EXTRA_TEXT,msg);
                 shareIntent.setType("text/plain");
                 // Launch sharing dialog for image
                 mActivity.startActivity(Intent.createChooser(shareIntent, "Share Image"));
