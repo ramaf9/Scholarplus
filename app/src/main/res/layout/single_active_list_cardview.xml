@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_margin="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:layout_gravity="center"
+            card_view:cardUseCompatPadding="true"
+            card_view:cardCornerRadius="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="6dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp">
+
+                    <ImageView
+                        android:id="@+id/created_by"
+                        android:layout_width="@dimen/photo_logo"
+                        android:layout_height="@dimen/photo_logo"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="4dp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="6dp"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:id="@+id/tv_judul"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Berita Pendidikan"
+                            android:textColor="@color/monsoon"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/text_view_created_by_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@+id/created_by"
+                            android:layout_toRightOf="@+id/created_by"
+                            android:textSize="@dimen/list_created_by_text_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.v1.firebase.scholarplus.ui.SquaredFrameLayout
+                    android:id="@+id/vImageRoot"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ivFeedCenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop" />
+
+                    <View
+                        android:id="@+id/vBgLike"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_like_circle_background"
+                        android:visibility="invisible" />
+
+                    <ImageView
+                        android:id="@+id/ivLike"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_heart_outline_white"
+                        android:visibility="invisible" />
+
+                </com.v1.firebase.scholarplus.ui.SquaredFrameLayout>
+
+                <TextView
+                    android:id="@+id/text_view_list_name"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:ellipsize="marquee"/>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp">
+
+
+
+                    <ImageButton
+                        android:id="@+id/btnComments"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:adjustViewBounds="true"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/btn_feed_action"
+                        android:src="@drawable/ic_comment_outline_grey" />
+
+                    <ImageButton
+                        android:id="@+id/btnMore"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:adjustViewBounds="true"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/btn_feed_action"
+                        android:src="@drawable/ic_more_grey" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="18dp"
+                        android:paddingBottom="18dp"
+                        android:gravity="center_vertical|right">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_heart_small_blue" />
+
+                        <TextSwitcher
+                            android:id="@+id/tsLikesCounter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:inAnimation="@anim/slide_in_likes_counter"
+                            android:outAnimation="@anim/slide_out_likes_counter">
+
+                            <TextView
+                                android:id="@+id/text_view_people_shopping_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/dark_layout" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/dark_layout" />
+                        </TextSwitcher>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+</ScrollView>

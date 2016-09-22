@@ -1,0 +1,198 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_fragment_lists"
+    android:layout_width="match_parent"
+    app:theme="@style/AppTheme.NoActionBar"
+    tools:context=".ui.home.HomeFragment"
+    android:scrollbars="none"
+    android:overScrollMode="ifContentScrolls"
+    android:layout_below="@+id/app_bar"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:background="@color/eee">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Got Stuck ?"
+                    android:textSize="25sp"
+                    android:textColor="@color/oil"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text="Coba tanyakan di scholarconnect"
+                    android:textColor="@color/monsoon"
+                    android:layout_marginLeft="18dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="18dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="45dp"
+                android:src="@drawable/ic_question_answer_white_48dp" />
+
+            <ProgressBar
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+        </LinearLayout>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/list_view_active_lists"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:isScrollContainer="false"
+                    android:nestedScrollingEnabled="false"
+                    android:scrollbars="none"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        </android.support.design.widget.CoordinatorLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="12dp"
+            android:paddingTop="12dp"
+            android:background="@color/eee">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Find people"
+                    android:textSize="25sp"
+                    android:textColor="@color/oil"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="13dp"
+                    android:text="You may know, even close"
+                    android:textColor="@color/monsoon"
+                    android:layout_marginLeft="18dp"/>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_marginTop="18dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="85dp"
+                android:src="@drawable/ic_supervisor_account_white_24dp" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/list_view_users_lists"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false"
+            android:nestedScrollingEnabled="false"
+            android:scrollbars="none"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <ProgressBar
+                android:id="@+id/loadload"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_alignParentLeft="true"
+                style="@android:style/Widget.Material.ProgressBar.Large"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="More feature is under construction"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/oil"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Version"
+                    android:textSize="12sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/aluminum"
+                    android:layout_marginLeft="18dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alpha V 0.7"
+                    android:textSize="12sp"
+                    android:textColor="@color/oil"
+                    android:layout_marginLeft="18dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</ScrollView>

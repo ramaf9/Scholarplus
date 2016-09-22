@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--android:background="@color/black_semi_transparent"-->
+        >
+
+        <com.volokh.danylo.video_player_manager.ui.VideoPlayerView
+            android:id="@+id/pitch_video"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="250dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fast Video Pitch"
+            android:paddingLeft="16dp"
+            android:textStyle="bold"
+            android:paddingTop="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="introduce yourself in a different \nway like never before"
+            android:textSize="12sp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Complete Profile"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:textStyle="bold"-->
+            <!--android:paddingTop="16dp" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Tampilin semua datanya disini ya ram"-->
+            <!--android:textSize="12sp"-->
+            <!--android:layout_marginBottom="12dp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Nama Lengkap"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingTop="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Ginanjar Prabowo"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Tanggal Lahir"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingTop="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="20 Mei 1996"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Provinsi"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingTop="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Jawa Timur"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Kota"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingTop="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Surabaya"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"/>-->
+
+        <!--<TextView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Universitas"-->
+        <!--android:paddingLeft="16dp"-->
+        <!--android:paddingTop="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Institut Teknologi Sepuluh Nopember"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Fakultas"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingTop="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="FTIF"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Jurusan"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingTop="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Sistem Informasi"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Semester"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingTop="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="4"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="IPK"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingTop="16dp"/>-->
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="3.6"-->
+            <!--android:textSize="24sp"-->
+            <!--android:layout_marginTop="6dp"-->
+            <!--android:paddingLeft="16dp"-->
+            <!--android:paddingRight="16dp"/>-->
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/video_cover"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@color/black_semi_transparent"
+        >
+        <ImageView
+            android:id="@+id/video_cover_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:layout_gravity="center"
+            android:src="@android:drawable/ic_media_play"
+            />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

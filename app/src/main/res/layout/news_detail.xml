@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.NewsDetailActivity"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    >
+                    <ImageView
+                        android:id="@+id/ivFeedCenter"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:scaleType="centerCrop" />
+
+
+                <!--<com.v1.firebase.scholarplus.ui.SquaredFrameLayout-->
+                    <!--android:id="@+id/vImageRoot"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_gravity="center">-->
+
+                    <!---->
+                    <!--<View-->
+                        <!--android:id="@+id/vBgLike"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="300dp"-->
+                        <!--android:background="@drawable/bg_like_circle_background"-->
+                        <!--android:visibility="invisible" />-->
+
+                <!--</com.v1.firebase.scholarplus.ui.SquaredFrameLayout>-->
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:background="@color/dark_design"
+                    android:paddingLeft="22dp"
+                    android:paddingRight="12dp"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp">
+
+                    <ImageView
+                        android:id="@+id/created_by"
+                        android:layout_width="@dimen/photo_logo"
+                        android:layout_height="@dimen/photo_logo"
+                        android:src="@mipmap/ic_launcher"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginRight="4dp"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingTop="6dp"
+                        android:layout_marginLeft="4dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Berita Pendidikan"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"/>
+                        <TextView
+                            android:id="@+id/text_view_created_by_user"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/white"
+                            android:layout_toEndOf="@+id/created_by"
+                            android:layout_toRightOf="@+id/created_by"
+                            android:textSize="@dimen/list_created_by_text_size" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/text_view_list_name"
+                    android:padding="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:ellipsize="marquee"/>
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="6dp"
+                    android:paddingBottom="6dp"
+                    android:background="@color/dark_design">
+
+                    <ImageButton
+                        android:id="@+id/btnComments"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:adjustViewBounds="true"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/btn_feed_action"
+                        android:src="@drawable/ic_comment_outline_grey" />
+
+                    <ImageButton
+                        android:id="@+id/btnMore"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:adjustViewBounds="true"
+                        android:padding="10dp"
+                        android:scaleType="fitCenter"
+                        android:background="@drawable/btn_feed_action"
+                        android:src="@drawable/ic_more_grey" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:paddingTop="18dp"
+                        android:paddingBottom="18dp"
+                        android:gravity="center_vertical|right">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_heart_small_blue" />
+
+                        <TextSwitcher
+                            android:id="@+id/tsLikesCounter"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:inAnimation="@anim/slide_in_likes_counter"
+                            android:outAnimation="@anim/slide_out_likes_counter">
+
+                            <TextView
+                                android:id="@+id/text_view_people_shopping_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/dark_layout" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/dark_layout" />
+                        </TextSwitcher>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+</ScrollView>
