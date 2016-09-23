@@ -383,7 +383,7 @@ public class EditProfileActivity extends BaseActivity {
                 Log.d("gak ada input","ya benar");
                 view.setAdapter(null);
             }else{
-                adapter = new ArrayAdapter<String>(EditProfileActivity.this,android.R.layout.simple_list_item_1,institut);
+                adapter = new ArrayAdapter<String>(EditProfileActivity.this,android.R.layout.simple_list_item_activated_1,institut);
 
 
                 Query ref = mFirebaseDatabaseRef.getReference(Constants.KEY_USERS).orderByChild(orderChild)

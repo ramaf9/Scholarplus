@@ -31,13 +31,13 @@ import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 import com.squareup.picasso.Picasso;
 import com.v1.firebase.scholarplus.R;
 import com.v1.firebase.scholarplus.model.News;
 import com.v1.firebase.scholarplus.model.Scholarship;
 import com.v1.firebase.scholarplus.model.User;
-import com.v1.firebase.scholarplus.ui.scholarlist.ScholarListDetailActivity;
 import com.v1.firebase.scholarplus.utils.Constants;
 
 import java.io.ByteArrayOutputStream;
@@ -50,14 +50,13 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
     private DatabaseReference mFirebaseDatabaseReference;
     private FirebaseRecyclerAdapter<News, HomeViewHolder>
             mFirebaseAdapter;
-    private FirebaseRecyclerAdapter<Scholarship, RecViewHolder>
-            mFirebaseAdapter2;
+    private RecAdapter mCustomAdapter;
     private RecyclerView mNewsRecyclerView,mRecRecyclerView;
     private LinearLayoutManager mLinearLayoutManager,mLinearLayoutManager2;
     private ProgressBar mProgressBar;
     private TextView welcometv;
     private ValueEventListener rec;
-    private String uid;
+    private String uid,smt;
     private String userChoosenTask;
     private int count = 0;
     private CoordinatorLayout cl_recommended;
@@ -91,7 +90,7 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+        final View rootView = inflater.inflate(R.layout.fragment_home, container, false);
         cl_recommended = (CoordinatorLayout) rootView.findViewById(R.id.card_view_recommended);
         welcometv = (TextView) rootView.findViewById(R.id.tv_welcome);
         mNewsRecyclerView = (RecyclerView) rootView.findViewById(R.id.list_view_active_lists);
@@ -99,8 +98,8 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
         mLinearLayoutManager = new LinearLayoutManager(getActivity().getApplicationContext());
         mProgressBar = (ProgressBar) rootView.findViewById(R.id.progressBar);
         mDemoSlider = (SliderLayout)rootView.findViewById(R.id.slider);
-        mLinearLayoutManager.setReverseLayout(true);
-        mLinearLayoutManager.setStackFromEnd(true);
+//        mLinearLayoutManager.setReverseLayout(true);
+//        mLinearLayoutManager.setStackFromEnd(true);
 
         mLinearLayoutManager2 = new LinearLayoutManager(getActivity().getApplicationContext());
         mLinearLayoutManager2.setReverseLayout(true);
@@ -122,8 +121,8 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
                         TextSliderView textSliderView = new TextSliderView(getContext());
                         // initialize a SliderLayout
                         textSliderView
-                                .description(key)
-                                .image(url_maps.get(key))
+                                .description(data.getNama())
+                                .image(data.getPhotopath())
                                 .setScaleType(BaseSliderView.ScaleType.Fit);
 
                         //add your extra information
@@ -180,71 +179,22 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
 
                 if (user != null) {
                     welcometv.setText(user.getName());
-                    mFirebaseAdapter2 = new FirebaseRecyclerAdapter<Scholarship,
-                            RecViewHolder>(
+                    Query ref = mFirebaseDatabaseReference.child("beasiswa")
+                            .orderByChild(Constants.FIREBASE_PROPERTY_KUANTITATIF + "/" + Constants.FIREBASE_PROPERTY_IPK)
+                            .endAt(user.getIpk())
+                            .limitToLast(3);
+                    mCustomAdapter = new RecAdapter(
+                            getActivity(),
                             Scholarship.class,
                             R.layout.single_active_list,
                             RecViewHolder.class,
-                            mFirebaseDatabaseReference.child("beasiswa")
-                                    .orderByChild(Constants.FIREBASE_PROPERTY_KUANTITATIF + "/" + Constants.FIREBASE_PROPERTY_IPK)
-                                    .endAt(user.getIpk())
-                                    .limitToLast(3)) {
-
-                        @Override
-                        protected void populateViewHolder(final RecViewHolder viewHolder,
-                                                          final Scholarship scholarship, int position) {
-                                String v = scholarship.getKuantitatif().get(Constants.FIREBASE_PROPERTY_SEMESTER).toString();
-
-                                if (!user.getSemester().isEmpty() && Double.parseDouble(user.getSemester()) >= Double.parseDouble(v)) {
-                                    count++;
-                                    cl_recommended.setVisibility(View.VISIBLE);
-                                    mProgressBar.setVisibility(ProgressBar.INVISIBLE);
-                                    viewHolder.createdByUser.setText(scholarship.getInstansi());
-                                    if (scholarship.getPhotopath() != null)
-//                                        new DownLoadImageTask(viewHolder.photoBy).execute(scholarship.getPhotopath());
-                                    Picasso.with(getActivity().getApplicationContext())
-                                            .load(scholarship.getPhotopath())
-//                                            .resize(50, 50)
-//                                            .centerCrop()
-                                            .into(viewHolder.photoBy);
-
-                                    final String itemId = this.getRef(position).getKey();
-                                viewHolder.mView.setOnClickListener(new View.OnClickListener() {
-                                    @Override
-                                    public void onClick(View v) {
-                                        Intent i = new Intent(getActivity(),ScholarListDetailActivity.class);
-                                        viewHolder.photoBy.buildDrawingCache();
-                                        Bitmap bm= viewHolder.photoBy.getDrawingCache();
-                                        ByteArrayOutputStream baos = new ByteArrayOutputStream();
-                                        bm.compress(Bitmap.CompressFormat.PNG, 10, baos);
-                                        byte[] b = baos.toByteArray();
-
-                                        i.putExtra(Constants.FIREBASE_PROPERTY_BEASISWA, scholarship);
-
-                                        i.putExtra(Constants.DETAIL_BG_PHOTO,scholarship.getBgphotopath());
-
-                                        i.putExtra(Constants.DETAIL_PHOTO,b);
-                                        i.putExtra(Constants.KEY_ID,itemId);
-                                        startActivity(i);
-
-                                    }
-                                });
-                                }
-                            else if(count == 0){
-                                    cl_recommended.setVisibility(View.GONE);
-                            }
-                            else{
-                                    cl_recommended.setVisibility(View.VISIBLE);
-                                    viewHolder.mView.setVisibility(View.GONE);
-                                }
-
-
-                        }
-
-                    };
-
+                            ref,
+                            mProgressBar,
+                            user.getSemester());
+                    smt = user.getSemester();
                     mRecRecyclerView.setLayoutManager(mLinearLayoutManager2);
-                    mRecRecyclerView.setAdapter(mFirebaseAdapter2);
+                    mRecRecyclerView.setAdapter(mCustomAdapter);
+
                 }
             }
 
@@ -441,8 +391,8 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
         mFirebaseDatabaseReference.removeEventListener(rec);
         if (mFirebaseAdapter != null)
             mFirebaseAdapter.cleanup();
-        if (mFirebaseAdapter2 != null)
-            mFirebaseAdapter2.cleanup();
+        if (mCustomAdapter != null)
+            mCustomAdapter.cleanup();
         Log.d("Status","destroy view");
     }
 
@@ -464,17 +414,20 @@ public class HomeFragment extends Fragment implements BaseSliderView.OnSliderCli
 
     }
 
-
     public static class RecViewHolder extends RecyclerView.ViewHolder {
         public TextView createdByUser;
         public ImageView photoBy;
         public View mView;
 
+
         public RecViewHolder(View v) {
             super(v);
             mView = v;
-            photoBy = (ImageView) itemView.findViewById(R.id.created_by);
-            createdByUser = (TextView)itemView.findViewById(R.id.text_view_created_by_user);
+            photoBy = (ImageView) v.findViewById(R.id.created_by);
+            createdByUser = (TextView)v.findViewById(R.id.text_view_created_by_user);
+        }
+        public void hide(){
+            mView.setVisibility(View.GONE);
         }
 
     }

@@ -280,6 +280,10 @@ public abstract class SortAdapter<T, VH extends RecyclerView.ViewHolder> extends
 
         notifyDataSetChanged();
     }
+    public void removeLocalList(int position){
+        mModels.remove(position);
+        notifyDataSetChanged();
+    }
 
     @Override
     public int getItemCount() {

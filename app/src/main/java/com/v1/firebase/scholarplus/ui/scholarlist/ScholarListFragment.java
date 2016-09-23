@@ -133,19 +133,19 @@ public class ScholarListFragment extends Fragment {
         mProgressBar = (ProgressBar) rootView.findViewById(R.id.progressBar);
         spn_sort = (Spinner) rootView.findViewById(R.id.spn_sort);
 
-        tipeSorting.add("nama");
-        tipeSorting.add("tenggat waktu");
+        tipeSorting.add(Constants.KEY_NAMA);
+        tipeSorting.add(Constants.KEY_DUEDATE);
 
-        spn_sort.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),android.R.layout.simple_list_item_1,tipeSorting));
+        spn_sort.setAdapter(new ArrayAdapter<String>(getActivity().getApplicationContext(),android.R.layout.simple_list_item_activated_1,tipeSorting));
 
         spn_sort.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
                 String sort = "";
-                if (tipeSorting.get(position).equalsIgnoreCase("nama")){
+                if (tipeSorting.get(position).equalsIgnoreCase(Constants.KEY_NAMA)){
                     sort = Constants.KEY_NAMA;
                 }
-                else if (tipeSorting.get(position).equalsIgnoreCase("nama")){
+                else if (tipeSorting.get(position).equalsIgnoreCase(Constants.KEY_DUEDATE)){
                     sort = Constants.KEY_DUEDATE;
                 }
                 mCustomAdapter.orderBy(sort);

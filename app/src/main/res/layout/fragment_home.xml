@@ -195,11 +195,10 @@
                     <android.support.v7.widget.RecyclerView
                         android:id="@+id/list_view_recommended"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:scrollbars="none"
-                        android:isScrollContainer="false"
-                        android:nestedScrollingEnabled="false"
-                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                        android:layout_height="wrap_content"
+                        android:fitsSystemWindows="true"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        />
 
                     <View
                         android:layout_width="match_parent"
