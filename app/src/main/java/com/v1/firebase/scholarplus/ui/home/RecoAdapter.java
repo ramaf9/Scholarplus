@@ -147,6 +147,7 @@ public abstract class RecoAdapter<T, VH extends RecyclerView.ViewHolder> extends
             public void onCancelled(DatabaseError databaseError) {
 
             }
+
         });
 //        mTemp = mModels;
 

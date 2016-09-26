@@ -66,8 +66,24 @@ public class NotificationListener extends Service {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot) {
                     User data = dataSnapshot.getValue(User.class);
-                    mIpk = Double.valueOf(data.getIpk());
-                    mSemester = Integer.valueOf(data.getSemester());
+                    try{
+                        mIpk = Double.valueOf(data.getIpk());
+
+                    }
+                    catch(NumberFormatException e){
+                        mIpk = 0.0;
+
+                    }
+                    try{
+                        mSemester = Integer.valueOf(data.getSemester());
+
+                    }
+                    catch(NumberFormatException e){
+                        mSemester = 0;
+
+                    }
+
+
                 }
 
                 @Override

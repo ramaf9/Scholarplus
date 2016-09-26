@@ -120,7 +120,7 @@ public class ActionSortAdapter extends SortAdapter<Scholarship, ScholarListFragm
                 shareIntent.putExtra(Intent.EXTRA_TEXT,msg);
                 shareIntent.setType("text/plain");
                 // Launch sharing dialog for image
-                mActivity.startActivity(Intent.createChooser(shareIntent, "Share Image"));
+                mActivity.startActivity(Intent.createChooser(shareIntent, "Share scholarship"));
 //
 //                Target shareTarget = new Target() {
 //                    @Override

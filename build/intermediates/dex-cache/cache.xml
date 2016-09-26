@@ -2,373 +2,355 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="7a23185c9b1c100e7d1a32275017e4712e31c796">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.0.0_9db2039d17e11bf8f81fd43c2005f9f63ec40333/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="7da84426d876216ed4cdddd85e739be5ecabdd04">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.0.0_828c9f98cde97e672df488d907b1a032dbd90859/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.10.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="f40cf334cdc8b098b74312e21c7741c6eefbeb0e">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.getbase-floatingactionbutton-1.10.1_b5e396f9a5ecbeeba43b8c20e9e5d6bdb404d1d7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.2.8/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="2c976c4ef99daf62fc2d4c9e81918f8f973da193">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.afollestad-easyvideoplayer-0.2.8_183030075a7e15c2da3be70ac46ddb10d7dc8e2b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.github.danylovolokh/video-player-manager/0.2.0/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="919661fb65990cb40ac9f8b95247de43a7a4ac3c">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.danylovolokh-video-player-manager-0.2.0_0dcd100129bfef79c7e71258701944c09ebb0f5a/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.github.danylovolokh-video-player-manager-0.2.0_0dcd100129bfef79c7e71258701944c09ebb0f5a.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="cd4c7c54e15d9ccbc448384fa2c4684d69ca73f0">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.0.2_8c89e5f56f80c258ca48f9ef26d590f64b578e45/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.0.2_39fe93c709da1653f28678a6d84ca5fb48790471/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.mikhaellopez/circularimageview/3.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.mikhaellopez-circularimageview-3.0.2_74f9354984060cf0cf2d8071e00dc84dc16827b7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0_de523a9b4b313c0b7108c4322c8f089dabd405fb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_e90cc46ab870d817dfcd3b28b3cd2433ca59b1ee/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.android.support-support-v4-24.0.0_e90cc46ab870d817dfcd3b28b3cd2433ca59b1ee.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.mikhaellopez/circularimageview/3.0.2/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/picasso-2.5.2_293b80e8db413cf56e37420fa5b20b1d3d612534/classes.dex" />
+        sha1="a8340f8c17337c864648c13abe1416d34c80ec14">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.mikhaellopez-circularimageview-3.0.2_74f9354984060cf0cf2d8071e00dc84dc16827b7.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.0.2/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.0.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="6ff48ef26bc539c78af4aa061cb9bad6abcbf5e8">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.0.2_49bd352634b2ee149f27e415d2c53b792ccf64fe/classes.dex" />
+        sha1="7a23185c9b1c100e7d1a32275017e4712e31c796">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-base-9.0.0_9db2039d17e11bf8f81fd43c2005f9f63ec40333.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.afollestad/easyvideoplayer/0.2.8/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2c976c4ef99daf62fc2d4c9e81918f8f973da193">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.afollestad-easyvideoplayer-0.2.8_183030075a7e15c2da3be70ac46ddb10d7dc8e2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7da84426d876216ed4cdddd85e739be5ecabdd04">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-auth-9.0.0_828c9f98cde97e672df488d907b1a032dbd90859.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="cd4c7c54e15d9ccbc448384fa2c4684d69ca73f0">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-9.0.2_8c89e5f56f80c258ca48f9ef26d590f64b578e45.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="a511c684ea4c2cf31a3377d51e7677cb76696e07">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-impl-9.0.2_39fe93c709da1653f28678a6d84ca5fb48790471.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_c399f2ea6067b56452f69e3ff81a8baa6adf1b29/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/internal_impl-24.0.0_c399f2ea6067b56452f69e3ff81a8baa6adf1b29.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="3a4f6fe18634cadec59ec734239f8a099f55a8ef">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4e07ebda8fc4ca58461a207822f2513f24958692/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.0.2_c65f88c9662db7ec375bded31304d568a276ad1e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.0.2_aab210b44cca731a2225ed81678f260aae5d0457/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/1.3.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/de.hdodenhof-circleimageview-1.3.0_50d6a9957d594dc64caae0cd9e67fb5b698f92f4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.0.0_48411448d9bfd293fab550be180ebda739bcac9d/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.6.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="d3cec13eea6c9b017d968a80a277ab9196df58f6">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.afollestad.material-dialogs-core-0.8.6.0_fbe9ddad937bdb8d866d3b79ade2446e3a6de56c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="e2eab891588f8d48dd1f3c2f663c31e9333af340">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_85b4a3be635fd148cb92f3282dd738df3e545acc/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0_44cc89302c9454da3d0c94fe7eded9dcbfedbda5/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.0.0_2b0d3cd4b7226b2447cdd6dbbe8206b885a39325/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.4.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="c76f6507a42aec274953e882bf3c49a570843ef5">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.firebaseui-firebase-ui-database-0.4.0_bb8c4b758f19e1403e642258e65a061d03088a73/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.daimajia.slider/library/1.1.5/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="08962e03b6a954c65d4944e092879b7f5ee1208d">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.daimajia.slider-library-1.1.5_253c5e76ce7c1bd6b12853f5540f2d4518ea8771/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.daimajia.slider-library-1.1.5_253c5e76ce7c1bd6b12853f5540f2d4518ea8771.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-common/9.0.2/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="568d5bda0b4d51f90d978ace369bb9ad024d2057">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-common-9.0.2_7a0e1c6db9a1f97c3c4ad096748b159f5e81fa37/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-common-9.0.2_7a0e1c6db9a1f97c3c4ad096748b159f5e81fa37.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/me.zhanghai.android.materialprogressbar/library/1.1.6/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="ab3193b438e37f7b0a634cc2dfebbf92892ea90c">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/me.zhanghai.android.materialprogressbar-library-1.1.6_ab636fe5e61797a76514e05ba23607817a3f8ecd/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/me.zhanghai.android.materialprogressbar-library-1.1.6_ab636fe5e61797a76514e05ba23607817a3f8ecd.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.0.2/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.firebaseui/firebase-ui-database/0.4.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-9.0.2_05ad9473b5e65d9239f48c1c6c47680d3474db0c/classes.dex" />
+        sha1="c76f6507a42aec274953e882bf3c49a570843ef5">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.firebaseui-firebase-ui-database-0.4.0_bb8c4b758f19e1403e642258e65a061d03088a73.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.afollestad/material-camera/0.2.14/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/design/24.0.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="9b1f1d4392deef8da7e3783b15a3acdc0668a394">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.afollestad-material-camera-0.2.14_dd339c37f5ab5ba81007e9e27b73a231f939e39f/classes.dex" />
+        sha1="fc29308a7a8f6d4407b34634eb48fb8b817f9b23">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.android.support-design-24.0.0_2b0d3cd4b7226b2447cdd6dbbe8206b885a39325.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="f2774b1e02e5fbc524590311a744263c3b152d63">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.0.2_bc0f6bfd6eeee971f08c849da3106c150ff2443b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-24.0.0_14c59a4487ed81dfba8244afd0e0e8ecd0c550eb/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.0.2_83284b2edb3e7b643834ea0b1ace9342d4a7dcac/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.0.2/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="4022261eeea0d92eb2997a68d2c1f084a16abad9">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.0.2_af1df9b21a8542a30315ec7d120252b35b2528dc/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-basement-9.0.2_af1df9b21a8542a30315ec7d120252b35b2528dc.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.2/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
-        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.0.2_73bf59a3f776f2feb3b1eaad3f14e02b05bf26f5/classes.dex" />
+        sha1="8dd49930e4f9dde1a42d37e362b9fea8b1b69c0d">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.android.support-cardview-v7-24.0.0_14c59a4487ed81dfba8244afd0e0e8ecd0c550eb.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_2dc4e17524f9a08b45ddb2036a457bfc0829c0ca/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.0.2_99a4aad82aedf8223b8bab3bdc953ecaa9521006/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.0.2/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.0.2_fa3293460f90b0f76de9b8b7db70550f306bcb50/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.github.clans/fab/1.6.4/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="1c3b9743fe8bb166a90a7e98b9b9f1f8021d80cd">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.clans-fab-1.6.4_be7ed62cf7f016c30e325abf43e87111a9b637f9/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.github.clans-fab-1.6.4_be7ed62cf7f016c30e325abf43e87111a9b637f9.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/MacBook/.gradle/caches/modules-2/files-2.1/com.nineoldandroids/library/2.4.0/e9b63380f3a242dbdbf103a2355ad7e43bad17cb/library-2.4.0.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="e9b63380f3a242dbdbf103a2355ad7e43bad17cb">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/library-2.4.0_541cff231c484fc383779a4ce11530f800903078/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/library-2.4.0_541cff231c484fc383779a4ce11530f800903078.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="23.0.3"
-        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0_763a865e32012390cd12bbdb51f3329c6aae3249/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
+        is-multidex="false"
         jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.0.2/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="94d9cedd04b124aed044ac71c451a292856d854c">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.0.2_3e4e900de6b6bd00d0d3fd4971499d97d2d8a367/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-base-9.0.2_3e4e900de6b6bd00d0d3fd4971499d97d2d8a367.jar" />
     </item>
     <item
-        is-multidex="true"
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="894922f67adeaaef51f077a29e315da21a3382d3">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.android.support-recyclerview-v7-24.0.0_48411448d9bfd293fab550be180ebda739bcac9d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.getbase/floatingactionbutton/1.10.1/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f40cf334cdc8b098b74312e21c7741c6eefbeb0e">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.getbase-floatingactionbutton-1.10.1_b5e396f9a5ecbeeba43b8c20e9e5d6bdb404d1d7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="e70f608219ed6b974644c333249ab2bb7b71de98">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.android.support-animated-vector-drawable-24.0.0_763a865e32012390cd12bbdb51f3329c6aae3249.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="3bd97cfefd783e9de1dd1c30574a6adb44b4409b">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.android.support-support-vector-drawable-24.0.0_de523a9b4b313c0b7108c4322c8f089dabd405fb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9919563cffd8e3732e944d3c437d4b9575a08448">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-common-9.0.2_c65f88c9662db7ec375bded31304d568a276ad1e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="51a11c41a08f099a204e1b8dcc04f27217de50ec">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-analytics-9.0.2_aab210b44cca731a2225ed81678f260aae5d0457.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="6ff48ef26bc539c78af4aa061cb9bad6abcbf5e8">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-storage-common-9.0.2_49bd352634b2ee149f27e415d2c53b792ccf64fe.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/de.hdodenhof/circleimageview/1.3.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="ac6948cce36f694f3eb3d73a135e298dc4b3527a">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/de.hdodenhof-circleimageview-1.3.0_50d6a9957d594dc64caae0cd9e67fb5b698f92f4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.afollestad.material-dialogs/core/0.8.6.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="d3cec13eea6c9b017d968a80a277ab9196df58f6">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.afollestad.material-dialogs-core-0.8.6.0_fbe9ddad937bdb8d866d3b79ade2446e3a6de56c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="0874286cc2fd88d54fdf130e9d5372730da6de97">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.android.support-appcompat-v7-24.0.0_44cc89302c9454da3d0c94fe7eded9dcbfedbda5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="f2774b1e02e5fbc524590311a744263c3b152d63">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-messaging-9.0.2_bc0f6bfd6eeee971f08c849da3106c150ff2443b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="fa472b7cbd3897bf6bed6068ac0b00e494987688">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-9.0.2_05ad9473b5e65d9239f48c1c6c47680d3474db0c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/picasso-2.5.2_293b80e8db413cf56e37420fa5b20b1d3d612534.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="aec1bc54964a85d851c2c1b1cb7f90f7dbd755ab">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.android.gms-play-services-tasks-9.0.2_83284b2edb3e7b643834ea0b1ace9342d4a7dcac.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.0.2/jars/classes.jar"
-        jumboMode="true"
+        jumboMode="false"
         optimize="true"
         revision="23.0.3"
         sha1="79e298d7fed2fcada58da7032d07d34ee198a545">
-        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.0.2_d5c47acef52ad0f94b13e929bec9763ad3aa65a9/classes.dex" />
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-auth-module-9.0.2_d5c47acef52ad0f94b13e929bec9763ad3aa65a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/support-annotations-24.0.0_2dc4e17524f9a08b45ddb2036a457bfc0829c0ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="4ec890171a97b5ab98292f131aa784e0f3792c73">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-9.0.2_99a4aad82aedf8223b8bab3bdc953ecaa9521006.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="b3d0809a742c5f768c6aa9efc6decd5c1d6cd227">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-iid-9.0.2_73bf59a3f776f2feb3b1eaad3f14e02b05bf26f5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.afollestad/material-camera/0.2.14/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9b1f1d4392deef8da7e3783b15a3acdc0668a394">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.afollestad-material-camera-0.2.14_dd339c37f5ab5ba81007e9e27b73a231f939e39f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.0.2/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.3"
+        sha1="9819419ce8d79f3f81a0fc70f9345ac8c843af9c">
+        <dex dex="/Users/MacBook/Documents/Scholarplus/app/build/intermediates/pre-dexed/debug/com.google.firebase-firebase-database-connection-9.0.2_fa3293460f90b0f76de9b8b7db70550f306bcb50.jar" />
     </item>
 
 </items>
